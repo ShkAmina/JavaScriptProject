@@ -1,0 +1,651 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #3D087B;
+}
+
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.clock {
+    position: relative;
+    left: -440px;
+
+}
+
+.Main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.Left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.alarm {
+    background-color: white;
+    color: #3D087B;
+    height: 300px;
+    width: 450px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Timer {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Line {
+    border-left: solid rgba(176, 168, 168, 0.856);
+    /* height: 1000px; */
+    height: 40px;
+    position: relative;
+    left: 50px;
+}
+
+.text {
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.Message {
+    background-color: rgb(106, 65, 154);
+    color: white;
+    width: 450px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.last {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CB52F8;
+    border-radius: 3px;
+    color: white;
+    background-image: linear-gradient(to right, #6E54EC, #FC5EFF);
+    width: 225px;
+    height: 30px;
+    border: none;
+}
+
+span {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover span {
+    display: none;
+}
+
+button:hover {
+    background-image: linear-gradient(to right, #FC5EFF, #6E54EC);
+
+}
+
+button:hover:after {
+    content: "Party Time!";
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.info {
+    border-radius: 5px;
+    width: 215px;
+    height: 95px;
+    background-color: rgb(106, 65, 154);
+}
+
+p {
+    color: #F25CFE;
+    font-weight: 20px;
+    padding: 2px;
+    margin: 1px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.liveclockone {
+
+    position: absolute;
+    right: 215px;
+    background: rgb(249, 199, 238);
+    backdrop-filter: blur(8px);
+    width: 350px;
+    height: 90px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.liveclocktwo {
+    background-color: rgb(104, 62, 152);
+    position: absolute;
+    right: 240px;
+    backdrop-filter: blur(8px);
+
+    width: 300px;
+    height: 100px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    z-index: -2;
+}
+
+.liveclock {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    width: 530px;
+    height: 90px;
+    border-radius: 10px;
+
+}
+
+.hrs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+    background-color: plum;
+    width: 60px;
+    height: 60px;
+}
+
+.hrs>span {
+    color: #8A11BF;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.hrs {
+    color: #8A11BF;
+    font-size: 25px;
+    font-weight: bold
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 410px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+#img {
+    width: 530px;
+    height: 290px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.MSG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: x-large;
+    font-weight: bold;
+    color: #5f4190;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 500px) {
+    body {
+        height: 120vh;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        /* width: 50%; */
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+        margin: 10;
+        margin-bottom: 10px;
+    }
+
+    .clock {
+        width: 150px;
+        position: relative;
+        left: 10px;
+    }
+
+    .Main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .Left {
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+    .alarm {
+        height: 250px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .Timer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: white;
+    }
+
+    .Line {
+       
+        left: 17px;
+    }
+
+    .text {
+        padding-top: 5px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .Message {
+
+        width: 300px;
+        height: 80px;
+    }
+
+    .last {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    button {
+        height: 40px;
+    }
+    button:hover:after {
+        content: "Party Time!";
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    span {
+
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+        width: 220px;
+        height: 150px;
+    }
+
+    p {
+        color: #F25CFE;
+        font-size: 16px;
+        padding: 8px;
+        margin: 0px;
+    }
+
+   
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+
+    }
+
+    .liveclockone {
+        display: none;
+    }
+
+    .liveclocktwo {
+        display: none;
+
+    }
+
+    .liveclock {
+        position: relative;
+        left: 1px;
+        width: 290px;
+        height: 70px;
+
+    }
+
+    .hrs {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hrs>span {
+        font-size: 16px;
+    }
+
+    .hrs {
+        color: #8A11BF;
+        font-size: 20px;
+        font-weight: bold
+    }
+    .image {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    #img {
+        position: relative;
+        left: 1px;
+        width: 300px;
+        height: 200px;
+        background-color: white;
+    }
+
+   
+    h3 {
+        font-size: 18px;
+        color: #3D087B;
+    }
+
+    
+
+    .MSG {
+        position: relative;
+        left: 1px;
+        padding: 5px;
+        width: 290px;
+        height: 60px;
+        border-radius: 5px;
+        font-size: large;
+    }
+
+    #mornText {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 100px;
+        margin: 0;
+        padding: 3px;
+    }
+
+   
+
+    .icon {
+        width: 25px;
+    }
+}
+@media screen and (min-device-width: 500px) and (max-device-width: 900px)
+{
+    body {
+        height: 120vh;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        /* width: 50%; */
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+        margin: 10;
+        margin-bottom: 10px;
+    }
+
+    .clock {
+        width: 250px;
+        position: relative;
+        left: 10px;
+    }
+
+    .Main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .Left {
+
+        display: flex;
+        flex-direction: column;
+        
+        gap: 30px;
+    }
+
+
+    .alarm {
+        height: 300px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .Timer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: white;
+    }
+
+    .Line {
+       
+        left: 60px;
+    }
+
+    .text {
+        padding-top: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .Message {
+
+        width: 500px;
+        height: 100px;
+    }
+
+    .last {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    button {
+        width: 450px;
+        height: 50px;
+    }
+    button:hover:after {
+        content: "Party Time!";
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    span {
+
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+        height: 200px;
+    }
+
+    p {
+        color: #F25CFE;
+        font-size: 25px;
+        padding: 8px;
+        margin: 0px;
+    }
+
+   
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+
+    }
+
+    .liveclockone {
+        display: none;
+    }
+
+    .liveclocktwo {
+        display: none;
+
+    }
+
+    .liveclock {
+        position: relative;
+        left: 1px;
+        width: 500px;
+        height: 90px;
+
+    }
+
+    .hrs {
+        width: 70px;
+        height: 70px;
+    }
+
+    .hrs>span {
+        font-size: 30px;
+    }
+
+    .hrs {
+        color: #8A11BF;
+        font-size: 30px;
+        font-weight: bold
+    }
+    .image {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+    }
+    #img {
+        position: relative;
+        left: 1px;
+        width: 500px;
+        height: 300px;
+        background-color: white;
+    }
+
+   
+    h3 {
+        font-size: 20px;
+        color: #3D087B;
+    }
+
+    
+
+    .MSG {
+        position: relative;
+        left: 1px;
+        padding: 5px;
+        width: 490px;
+        height: 60px;
+        border-radius: 5px;
+        font-size: 25px;
+    }
+
+    #mornText {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        margin: 0;
+        padding: 3px;
+    }
+
+   
+
+    .icon {
+        width: 25px;
+    } 
+}

@@ -1,0 +1,12 @@
+.liveclock
+{
+    display: flex;
+    gap: 150px;
+}
+.hrs
+{
+    h
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+}
