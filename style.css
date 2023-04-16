@@ -51,6 +51,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-size: 20px;
+    padding-top: 10px;
+    font-size: 18px;
 }
 
 .Line {
@@ -62,8 +65,7 @@ body {
 }
 
 .text {
-    padding-top: 10px;
-    font-size: 18px;
+  
 }
 
 .Message {
@@ -281,13 +283,19 @@ p {
     }
 
     .Timer {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-radius: 10px;
+        /* padding-top: 8px;
+        padding-bottom: 8px; */
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        background-color: white;
+        /* font-size: 20px; */
+        /* padding-top: 10px; */
+        font-size: 1px;
+        font-weight: bold;
+    }
+    .size
+    {
+        font-size: 17px;
     }
 
     .Line {
@@ -302,8 +310,17 @@ p {
     }
     .Message {
 
-        width: 300px;
+        width: 500px;
         height: 80px;
+    }
+    #mornText {
+        display: flex;
+        /* justify-content: start; */
+        /* text-align: center; */
+        width: 290px;
+        margin: 0;
+        padding: 3px;
+        font-size: 20px;
     }
 
     .last {
@@ -421,14 +438,7 @@ p {
         font-size: large;
     }
 
-    #mornText {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        width: 100px;
-        margin: 0;
-        padding: 3px;
-    }
+ 
 
    
 
@@ -498,6 +508,11 @@ p {
         flex-direction: row;
         justify-content: space-around;
         background-color: white;
+    }
+    .size
+    {
+        font-size: 20px;
+        font-weight: bold;
     }
 
     .Line {
@@ -638,7 +653,7 @@ p {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        width: 100px;
+        width: 500px;
         margin: 0;
         padding: 3px;
     }
