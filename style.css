@@ -311,12 +311,13 @@ p {
     }
     #mornText {
         display: flex;
-        /* justify-content: start; */
-        /* text-align: center; */
+        /* justify-content: centre; */
+        text-align: center;
         width: 290px;
         margin: 0;
         padding: 3px;
         font-size: 20px;
+        font-weight: bold;
     }
 
     .last {
@@ -426,6 +427,7 @@ p {
 
     .MSG {
         position: relative;
+        text-align: center;
         left: 1px;
         padding: 5px;
         width: 290px;
@@ -434,13 +436,10 @@ p {
         font-size: large;
     }
 
- 
-
-   
-
     .icon {
         width: 25px;
     }
+
 }
 @media screen and (min-device-width: 500px) and (max-device-width: 900px)
 {
@@ -635,6 +634,7 @@ p {
 
     .MSG {
         position: relative;
+       
         left: 1px;
         padding: 5px;
         width: 490px;
@@ -652,6 +652,9 @@ p {
         width: 500px;
         margin: 0;
         padding: 3px;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
     }
 
    

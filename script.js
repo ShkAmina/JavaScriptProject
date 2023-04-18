@@ -43,7 +43,6 @@ function displayTime()
     {
         const Greeting = document.getElementsByClassName('MSG')[0];
         Greeting.innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP"
-        // console.log ("CLOSE YOUR EYES AND GO TO SLEEP...!")
     }
 
     if(hrs>=1 && hrs<6)
