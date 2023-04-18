@@ -126,3 +126,19 @@ function callme()
         image.src = './goodnight_image.svg';
     }
 }
+// function party()
+// {
+//     // console.log("Working");
+//     document.getElementById("BUTTON").innerHTML="Party Time !"
+//     document.getElementById("BUTTON").style.backgroundImage = "linear-gradient(to right, #FC5EFF, #6E54EC)";
+//     document.getElementById("BUTTON").style.fontSize = "20px"
+//     document.getElementById("BUTTON").style.fontWeight = "bold"
+// }
+// function set()
+// {
+//     // console.log("w");
+//     document.getElementById("BUTTON").innerHTML="Set Alarm"
+//     document.getElementById("BUTTON").style.backgroundImage = "linear-gradient(to right,#6E54EC, #FC5EFF )";
+//     document.getElementById("BUTTON").style.fontSize = "20px"
+//     document.getElementById("BUTTON").style.fontWeight = "bold"
+// }
